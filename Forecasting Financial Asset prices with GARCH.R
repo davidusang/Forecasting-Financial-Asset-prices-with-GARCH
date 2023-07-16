@@ -72,6 +72,7 @@ plot(sigma(forecast))
 
 # Generate predictions by forecasting future asset prices
 sim <- ugarchsim(m_final, n.sim = 100)
-prediction_df <- 23.534 * apply(fitted(sim), 2, 'cumsum') + 23.534
+tail(df)
+prediction_df <- 24.910 * apply(fitted(sim), 2, 'cumsum') + 24.910
 matplot(prediction_df, type = "l", lwd = 3)
 prediction_df
